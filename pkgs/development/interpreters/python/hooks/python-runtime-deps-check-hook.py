@@ -92,6 +92,7 @@ if __name__ == "__main__":
 
     metadata = get_metadata(args.wheel)
     requirements = metadata.requires_dist
+    print(requirements)
 
     if not requirements:
         sys.exit(0)
