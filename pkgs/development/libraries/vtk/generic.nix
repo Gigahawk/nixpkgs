@@ -109,7 +109,7 @@ stdenv.mkDerivation {
       "-DCMAKE_INSTALL_LIBDIR=lib"
       "-DCMAKE_INSTALL_INCLUDEDIR=include"
       "-DCMAKE_INSTALL_BINDIR=bin"
-      "-DVTK_VERSIONED_INSTALL=OFF"
+      "-DVTK_VERSIONED_INSTALL=ON"
     ]
     ++ optionals enableQt [
       "-DVTK_GROUP_ENABLE_Qt:STRING=YES"
