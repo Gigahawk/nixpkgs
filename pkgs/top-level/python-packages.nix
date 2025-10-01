@@ -5,9 +5,7 @@
 # Examples are Python-based cli tools.
 #
 # For more details, please see the Python section in the Nixpkgs manual.
-
 self: super: with self; {
-
   bootstrap = lib.recurseIntoAttrs {
     flit-core = toPythonModule (callPackage ../development/python-modules/bootstrap/flit-core { });
     installer = toPythonModule (
@@ -2215,6 +2213,8 @@ self: super: with self; {
   buienradar = callPackage ../development/python-modules/buienradar { };
 
   build = callPackage ../development/python-modules/build { };
+
+  build123d = callPackage ../development/python-modules/build123d { };
 
   buildcatrust = callPackage ../development/python-modules/buildcatrust { };
 
