@@ -5,9 +5,7 @@
 # Examples are Python-based cli tools.
 #
 # For more details, please see the Python section in the Nixpkgs manual.
-
 self: super: with self; {
-
   bootstrap = lib.recurseIntoAttrs {
     flit-core = toPythonModule (callPackage ../development/python-modules/bootstrap/flit-core { });
     installer = toPythonModule (
@@ -18665,6 +18663,8 @@ self: super: with self; {
   trezor-agent = callPackage ../development/python-modules/trezor-agent {
     pinentry = pkgs.pinentry-curses;
   };
+
+  trianglesolver = callPackage ../development/python-modules/trianglesolver { };
 
   trie = callPackage ../development/python-modules/trie { };
 
