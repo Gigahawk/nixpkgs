@@ -2145,6 +2145,8 @@ self: super: with self; {
 
   branca = callPackage ../development/python-modules/branca { };
 
+  bravado = callPackage ../development/python-modules/bravado { };
+
   bravado-core = callPackage ../development/python-modules/bravado-core { };
 
   bravia-tv = callPackage ../development/python-modules/bravia-tv { };
